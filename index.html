@@ -25,7 +25,6 @@
 
 <body>
   <div id="container">
-    <header></header>
     <div class="topbar">
       <!-- <h3><a href="#" class="brand">H3</a></h3> -->
       <div class="topbar-inner">
@@ -34,23 +33,26 @@
         <div class="container">
           <a href="#" class="brand">Brand</a>
           <ul class="nav">
-            <li>Just LI</li>
-            <li><a href="#dimple">LI-A</a></li>
-            <li><div>LI_DIV</div></li>
+            <li><a href="#">Other</a></li>
+            <li><a href="#">Things</a></li>
+            <li><a href="#">and</a></li>
+            <li><a href="#">Metrics</a></li>
           </ul>
         </div>
       </div>
     </div>
     <div id="main" role="main">
-      Main
-      <pre id="touchstart">Touch</pre>
-      <pre id="touchmove">Touch</pre>
-      <pre id="touchend">Touch</pre>
-      <pre id="log"></pre>
+      <div style="margin-top:80px">
+      <div class="row">
+        <pre class="span4" id="touchstart">Touch Start</pre>
+        <pre class="span4" id="touchmove">Touch Move</pre>
+        <pre class="span4" id="touchend">Touch End</pre>
+        <pre class="span4" id="log"></pre>
+      </div>
     </div>
     <div id='bottombar'>Bottom</div>
-    <footer></footer>
   </div> <!--! end of #container -->
+
   <!-- JavaScript at the bottom for fast page loading -->
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
   <script src="//ajax.googleapis.com.not/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
