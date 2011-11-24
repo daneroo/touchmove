@@ -12,8 +12,10 @@
   <!-- <link rel="shortcut icon" href="img/l/apple-touch-icon.png"> -->
   <!-- Splash Screen -->
 
-  <!-- Main Stylesheet -->
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="css/style.css?v=1">
+  <link rel="stylesheet" href="css/bootstrap.css?v=1.4.0">
+  <link rel="stylesheet" href="css/playlink.css?v=1">
 
   <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
   <script src="js/libs/modernizr-custom.js"></script>
@@ -23,44 +25,48 @@
 
 <body>
   <div id="container">
-    <header>
-      Header
-    </header>
-    <div id="main" role="main">
-      Body
+    <header></header>
+    <div class="topbar">
+      <!-- <h3><a href="#" class="brand">H3</a></h3> -->
+      <div class="topbar-inner">
+        <div class="topreveal">TOP REVEAL</div>
+        <div class="dimple"></div>
+        <div class="container">
+          <a href="#" class="brand">Brand</a>
+          <ul class="nav">
+            <li>Just LI</li>
+            <li><a href="#dimple">LI-A</a></li>
+            <li><div>LI_DIV</div></li>
+          </ul>
+        </div>
+      </div>
     </div>
-
-    <footer>
-      Footer
-    </footer>
+    <div id="main" role="main">
+      Main
+      <pre id="touchstart">Touch</pre>
+      <pre id="touchmove">Touch</pre>
+      <pre id="touchend">Touch</pre>
+      <pre id="log"></pre>
+    </div>
+    <div id='bottombar'>Bottom</div>
+    <footer></footer>
   </div> <!--! end of #container -->
-
-
   <!-- JavaScript at the bottom for fast page loading -->
-
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+  <script src="//ajax.googleapis.com.not/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
 
   <!-- scripts concatenated and minified via ant build script -->
   <script src="js/mylibs/helper.js"></script>
+  <script src="js/pulldown.js"></script>
   <!-- end concatenated and minified scripts-->
 
   <script>
     // iPhone Scale Bug Fix, read this when using http://www.blog.highub.com/mobile-2/a-fix-for-iphone-viewport-scale-bug/
-    MBP.scaleFix();
+    //MBP.scaleFix();
   </script>
 
   <!-- Debugger - remove for production -->
-  <!-- <script src="https://getfirebug.com/firebug-lite.js"></script> -->
-
-  <!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID -->
-  <script>
-    var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
-    g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
-    s.parentNode.insertBefore(g,s)}(document,"script"));
-  </script>
-
+  <!--<script src="https://getfirebug.com/firebug-lite.js"></script>-->
 </body>
 </html>
