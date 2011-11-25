@@ -27,7 +27,8 @@
 }
 
 #main {
-  padding-top: 40px;
+  padding-top: 100px; /* 40px min */
+  padding-left:20px;
   background:#DDDDDD;
   height:500px;
 }  
@@ -42,6 +43,14 @@
     padding-left:5px;
 }
 
+.leaf {
+  width: 50px;
+}
+.leaf:hover {
+  width: 55px;
+  -webkit-transform: rotate(-22deg);
+  -moz-transform: rotate(-22deg);
+}
 .bottombar {
   background:#222222;
   color: #ffffff;
